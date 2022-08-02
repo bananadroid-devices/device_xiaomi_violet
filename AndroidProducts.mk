@@ -13,9 +13,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/voltage_violet.mk
+    $(LOCAL_DIR)/banana_violet.mk
 
 COMMON_LUNCH_CHOICES := \
-    voltage_violet-user \
-    voltage_violet-userdebug \
-    voltage_violet-eng
+    banana_violet-user \
+    banana_violet-userdebug \
+    banana_violet-eng

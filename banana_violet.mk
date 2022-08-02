@@ -19,10 +19,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from violet device
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
-# Inherit some common Voltage OS stuff.
-$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
-
-PRODUCT_NAME := voltage_violet
+# Inherit some common BananaDroid  stuff.
+$(call inherit-product, vendor/banana/config/common.mk)
+BANANA_BUILD_TYPE := OFFICIAL
+TARGET_FACE_UNLOCK_SUPPORTED := true
+PRODUCT_NAME := banana_violet
 PRODUCT_DEVICE := violet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro
@@ -34,5 +35,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# Voltage OS Official
-VOLTAGE_BUILD_TYPE := OFFICIAL
